@@ -17,6 +17,16 @@ $link .= $_SERVER['HTTP_HOST'];
 if(isset($_POST['submit'])){
     //code
     $file=$_FILES['file'];
+
+    //check if there's no php in there:
+    $input=file_get_contents($_FILES["fileToUpload"]["tmp_name"]);
+
+    if (pgrep_match('/(<\?php\s)/',$input)){
+        echo 'not allowed';
+    } else {
+        $input = str_replace(chr(0), '', $input); // nullbyte insertion protection
+    }
+
     //in index.php we named the file "file"
     //print_r($file);
     $fileName=$_FILES['file']['name'];
@@ -29,7 +39,7 @@ if(isset($_POST['submit'])){
     $fileExt = explode('.', $fileName);         //JpG
     $fileActualExt = strtolower(end($fileExt)); //jpg
 
-    $allowed = array('jpg', 'jpeg', 'png', 'pdf');
+    $allowed = array('jpg', 'jpeg', 'png', 'pdf', 'avi', 'txt','sh','conf');
     if(in_array($fileActualExt, $allowed)){
         //if extension is in there:
         if($fileError === 0){
