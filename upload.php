@@ -42,6 +42,12 @@ if(isset($_POST['submit'])){
     $fileActualExt = strtolower(end($fileExt)); //jpg
 
     $allowed = array('jpg', 'jpeg', 'png', 'pdf', 'avi', 'txt','sh','conf');
+    //////////////////////////////////////////////////////////////////
+    $input=file_get_contents($_FILES["fileToUpload"]["tmp_name"]);
+    if(pgrep_match('/(<\?php\s)/',$input)){
+	echo 'not allowed';
+    } else {
+    //////////////////////////////////////////////////////////////////
     if(in_array($fileActualExt, $allowed)){
         //if extension is in there:
         if($fileError === 0){
@@ -71,6 +77,7 @@ if(isset($_POST['submit'])){
     }else{
         echo "you cant upload this filetype!";
     }
+}
 }
 ?>
 
