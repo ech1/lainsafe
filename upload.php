@@ -18,6 +18,7 @@ if(isset($_POST['submit'])){
     //code
     $file=$_FILES['file'];
 
+    //////////////////////////////////////////////////////////////////////
     //check if there's no php in there:
     $input=file_get_contents($_FILES["fileToUpload"]["tmp_name"]);
 
@@ -26,6 +27,7 @@ if(isset($_POST['submit'])){
     } else {
         $input = str_replace(chr(0), '', $input); // nullbyte insertion protection
     }
+    /////////////////////////////////////////////////////////////////////
 
     //in index.php we named the file "file"
     //print_r($file);
