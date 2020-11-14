@@ -29,9 +29,12 @@ if(isset($_POST['submit'])){
     $fileExt = explode('.', $fileName);         //JpG
     $fileActualExt = strtolower(end($fileExt)); //jpg
 
-    $allowed = array('jpg', 'jpeg', 'png', 'pdf', 'avi', 'txt','sh','conf','php');
-    if(in_array($fileActualExt, $allowed)){
+    $allowed = array('jpg', 'jpeg', 'png', 'pdf', 'avi', 'txt','sh', 'conf');
+    $not_allowed = array('sh','php');
+    if(in_array($fileActualExt, $not_allowed)){
         //if extension is in there:
+	echo "you cant upload this filetype!";
+    }else{
         if($fileError === 0){
             if($fileSize < 100000000){ //less than 100mb
                 //unique id for the file uploaded (to avoid overwrites)
@@ -55,8 +58,6 @@ if(isset($_POST['submit'])){
             echo "error during upload!";
         }
 
-    }else{
-        echo "you cant upload this filetype!";
     }
 }
 ?>
