@@ -5,7 +5,6 @@ apt update -y  && apt upgrade -y
 apt install nginx git php7.3-fpm curl php7.3-common socat -y
 systemctl enable --now nginx php7.3-fpm
 
-mkdir /var/www/html/filesafe/uploads/ -p
 cd /var/www/html
 git clone https://github.com/ech1/lainsafe
 
