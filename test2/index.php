@@ -16,6 +16,10 @@
 <h2 class="upload-console-header">LainSafe</h2>
 <h3>Max FileSize: 100mb</h3>
 <div>
+
+	
+	<div style="float: left; width:25%;">
+<img src="logo.png">
 <?php
 function formatBytes($size, $precision = 2)
 {
@@ -32,9 +36,6 @@ $string='<span style="color:#999;text-align:center;">';
 $string2='</span>';
 echo $string . "$df / $dt total" . $string2;
 ?>
-	
-	<div style="float: left; width:25%;">
-		<img src="logo.png">
 	</div>
 	
 	<div style="float: right; width:60%;">
