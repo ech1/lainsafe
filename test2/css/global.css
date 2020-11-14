@@ -9,7 +9,7 @@ h3,
 h4,
 h5{
 	font-weight: 400;
-	color: #eee;
+	color: #BE8896;
 	
 }
 
@@ -28,7 +28,7 @@ h5{
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 50px;
-	border:2px solid #eee;
+	border:2px solid #BE8896;
 	background-color: #29161c;
 	padding:20px;
 }
@@ -36,17 +36,17 @@ h5{
 .upload-console-header{
 	padding:0 0 20px 0;
 	margin: 0;
-	border-bottom:2px solid #eee;
+	border-bottom:2px solid #BE8896;
 	font-weight: 600;
 	margin-bottom:20px;
 }
 
 .upload-console-drop{
 	height: 200px;
-	border:2px dashed #ccc;
+	border:2px dashed #874A5B;
 	line-height: 200px;
 	background-color: #29161c;
-	color: #ccc;
+	color: #874A5B;
 	text-align: center;
 	margin-bottom: 20px;
 }
@@ -81,12 +81,12 @@ h5{
 	transition:width 0.8s ease;
 }
 .bar-fill-text{
-	color: #fff;
+	color: #DBD9BD;
 	line-height: 30px;
 	margin-left: 5px;
 }
 .upload-console-upload{
-	border-bottom:2px solid #ccc;
+	border-bottom:2px solid #874A5B;
 	color: #89864C;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
