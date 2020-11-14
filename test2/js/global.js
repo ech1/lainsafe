@@ -27,6 +27,7 @@
 					uploadedElement.className = 'upload-console-upload';
 
 					uploadedAnchor = document.createElement('a');
+					uploadedAnchor.className = 'colorlinked';
 					uploadedAnchor.textContent = currFile.name;
 
 					if(currFile.uploaded) {
