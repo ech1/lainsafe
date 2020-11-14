@@ -6,7 +6,11 @@
 
 	foreach($_FILES['files']['name'] as $key => $name) {
 		$fileSize=$_FILES['file']['size'];
+		$fileTmpName=$_FILES['file']['tmp_name'];
+		$fileExt = explode('.', $fileName);
+		$fileActualExt = strtolower(end($fileExt));
 		$not_allowed = array('sh','php');
+		
 		if($_FILES['files']['error'][$key] === 0 && $filesize < 100000000){
 			$temp = $_FILES['files']['tmp_name'][$key];
 			$ext = strtolower(end(explode('.', $name)));
