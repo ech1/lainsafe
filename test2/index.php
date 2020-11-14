@@ -14,6 +14,7 @@
 
 <div class="upload-console" >
 <h2 class="upload-console-header">LainSafe</h2>
+<h3>Max FileSize: 100mb</h3>
 <div>
 <?php
 function formatBytes($size, $precision = 2)
