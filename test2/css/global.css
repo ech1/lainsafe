@@ -62,7 +62,7 @@ h5{
 .bar-fill{
 	height: 30px;
 	display: block;
-	background: yellow;
+	background: #;
 	width: 0;
 	border-radius: 3px;
 	-webkit-transition:width 0.8s ease;

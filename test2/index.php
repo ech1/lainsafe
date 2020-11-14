@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>LainSafe</title>
 	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="wrapper">
