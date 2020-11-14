@@ -48,6 +48,11 @@ h5{
 	border-color: #222;
 	color:#222;
 }
+
+.a{
+	color:yellow;
+}
+
 .upload-console-body{
 	margin-bottom: 20px;
 }
