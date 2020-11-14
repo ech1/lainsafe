@@ -38,7 +38,7 @@ input {
     font-size: 17px;
 }
 .fileupload{
-    margin-bottom: 100px;
+    margin-bottom: 5px;
 }
 
 input::placeholder {
