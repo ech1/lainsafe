@@ -25,6 +25,7 @@ h5{
 .upload-console{
 	border:2px solid #eee;
 	padding:20px;
+	width:50%;
 }
 
 .upload-console-header{
