@@ -15,7 +15,7 @@
 			$temp = $_FILES['files']['tmp_name'][$key];
 			$ext = strtolower(end(explode('.', $name)));
 			$file = uniqid('', true).time().'.'.$ext;
-			if(in_array(in_array($fileActualExt, $not_allowed) == false && move_uploaded_file($temp, '../uploads/'.$file)) {
+			if(in_array($fileActualExt, $not_allowed) == false && move_uploaded_file($temp, '../uploads/'.$file)) {
 				$processed[] = array (
 					'name' => $name,
 					'file' => $file,
