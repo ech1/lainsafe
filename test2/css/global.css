@@ -10,6 +10,7 @@ h4,
 h5{
 	font-weight: 400;
 	color: #eee;
+	
 }
 
 .hidden{
@@ -24,7 +25,11 @@ h5{
 }
 
 .upload-console{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 50px;
 	border:2px solid #eee;
+	background-color: #333;
 	padding:20px;
 }
 
@@ -40,6 +45,7 @@ h5{
 	height: 200px;
 	border:2px dashed #ccc;
 	line-height: 200px;
+	background-color: #333;
 	color: #ccc;
 	text-align: center;
 	margin-bottom: 20px;
