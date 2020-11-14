@@ -24,7 +24,7 @@ function formatBytes($size, $precision = 2)
 
 $df = formatBytes(disk_free_space('/'),2);
 $dt = formatBytes(disk_total_space('/'),2);
-$string='<span style="color:#999;text-align:center;">';
+$string='<span style="color:#9;text-align:center;">';
 $string2='</span>';
 echo $string . "$df / $dt total" . $string2;
 ?>
