@@ -19,7 +19,7 @@
 		
 		if($_FILES['files']['error'][$key] === 0 ){
 			
-			if( in_array($ext,$not_allowed) == false && $fileSize < 100000000 && move_uploaded_file($temp, '../uploads/'.$file)  ) {
+			if( in_array($ext,$not_allowed) == false && $fileSize < 100000000 && move_uploaded_file($temp, 'uploads/'.$file)  ) {
 				$processed[] = array (
 					'name' => $name,
 					'file' => $file,
