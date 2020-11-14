@@ -175,7 +175,7 @@ html{
 body{
   background: rgba(0,0,0,0.9);
 }
-*/
+
 form{
   position:absolute;
   top: 50%;
@@ -223,7 +223,7 @@ form button:hover{
 }
 form button:active{
   border:0;
-}
+}*/
 
 
 
