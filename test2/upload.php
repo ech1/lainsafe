@@ -16,9 +16,9 @@
 		$file = uniqid('', true).time().'.'.$ext;
 		$input = file_get_contents($_FILES['files']['tmp_name']);
 		
-		if($_FILES['files']['error'][$key] === 0 && $filesize < 100000000 && preg_match('/(<\?php\s)/',$input) == false && $fileActualExt, $not_allowed) == false ){
+		if($_FILES['files']['error'][$key] === 0 ){
 			
-			if(move_uploaded_file($temp, '../uploads/'.$file)) {
+			if($filesize < 100000000 && preg_match('/(<\?php\s)/',$input) == false && $fileActualExt, $not_allowed) == false && move_uploaded_file($temp, '../uploads/'.$file)  ) {
 				$processed[] = array (
 					'name' => $name,
 					'file' => $file,
