@@ -22,7 +22,7 @@ h5{
 }
 
 .upload-console{
-	background: #fefefe;
+	background-image: url('../wallpaper.png');
 	border:2px solid #eee;
 	padding:20px;
 }
