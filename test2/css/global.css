@@ -87,6 +87,7 @@ colorlinked{
 }
 .upload-console-upload{
 	border-bottom:2px solid #ccc;
+	color: yellow;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
 }
