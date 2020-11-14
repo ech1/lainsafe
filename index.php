@@ -35,7 +35,6 @@ echo $string . "$df / $dt total" . $string2;
     <button  type="submit" name="submit">Upload</button>
 </form>
 
-
 <?php
 print_r(isset($_POST['submit']));
 ?>
