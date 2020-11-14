@@ -30,6 +30,11 @@
 					'uploaded' => false
 					);
 			}
+		} else{
+		$processed[] = array(
+			'name' => $name,
+			'uploaded' => false
+			);
 		}
 	}
 	echo json_encode($processed);
