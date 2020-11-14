@@ -14,18 +14,18 @@
 
 <div class="upload-console">
 <h2 class="upload-console-header">Upload</h2>
-<div class="upload-console-body">
+<div>
 	<h3>Select files from your computer</h3>
 	<form action="upload.php" method="post" enctype="multipart/form-data">
 		<input type="file" name="files[]" id="standard-upload-files" multiple>
 		<input type="submit" value="Upload files" id="standard-upload">
 	</form>
 
-<div style="float: left; width:1%;" class="upload-console-body">
+<div style="float: left; width:1%;">
 	<img src="logo.png">
 </div>
 
-<div style="float: right; width:60%;" class="upload-console-body">
+<div style="float: right; width:60%;">
 
 	<h3>Drag and drop files below</h3>
 	<div class="upload-console-drop" id="drop-zone">
