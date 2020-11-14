@@ -26,7 +26,7 @@
 </div>
 
 <div style="float: right; width:60%;">
-
+</br></br></br>
 	<h3>Drag and drop files below</h3>
 	<div class="upload-console-drop" id="drop-zone">
 		Just drag and drop files here
